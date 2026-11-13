@@ -1,26 +1,43 @@
 # My DevOps Project
 
 ## Project Overview
-A simple website deployed on AWS EC2 using Docker and Nginx.
+Deployed a static website on AWS EC2
+using Docker and Nginx.
 
 ## Technologies Used
 - AWS EC2
 - Amazon Linux 2023
 - Docker
 - Nginx
-- HTML
+- Git
+- GitHub
+- Linux
 
-## Deployment
-1. Launch an EC2 instance.
+## Deployment Architecture
+
+User
+  |
+  v
+AWS EC2 Instance
+  |
+  v
+Docker Container
+  |
+  v
+Nginx Web Server
+  |
+  v
+HTML Website
+
+## Deployment Steps
+1. Launch AWS EC2 instance.
 2. Install Docker.
-3. Create an HTML website.
-4. Build a Docker image.
-5. Run the container on port 80.
-6. Access the website using the EC2 public IP.
-
-## Docker Commands
-docker build -t my-devops-site:v1 .
-docker run -d --name my-devops-web -p 80:80 my-devops-site:v1
+3. Create HTML website.
+4. Create Dockerfile.
+5. Build Docker image.
+6. Run Docker container.
+7. Access website using EC2 public IP.
+8. Push project to GitHub.
 
 ## Author
 Nanda Kumar
