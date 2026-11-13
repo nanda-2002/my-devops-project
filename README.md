@@ -41,3 +41,17 @@ HTML Website
 
 ## Author
 Nanda Kumar
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    A[User Browser]
+    B[AWS EC2 Instance]
+    C[Docker Container]
+    D[Nginx Web Server]
+    E[HTML Website]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
